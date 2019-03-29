@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         /**You can listen to preference changes for a particular key
          * In this case, whenever userAge updates, {@link onChangePreferenceValue} will be triggered
          */
-        var userAge by PreferenceDelegate(sharedPref, "name", 0, object : PreferenceObserver {
+        var userAge by PreferenceDelegate(sharedPref, "age", 0, object : PreferenceObserver {
             override fun <T> onChangePreferenceValue(key: String, value: T) {
                 print("$key: $value")
             }
