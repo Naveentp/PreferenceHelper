@@ -1,5 +1,12 @@
 # Preference Helper
-> A SharedPreference helper library to save and fetch the values easily.
+> A SharedPreferences helper library to save and fetch the values easily.
+
+## Use in your project
+Grab this library at Maven coordinates.  
+
+```
+implementation 'com.naveentp:preferencehelper:0.0.1'
+```
 
 ## Usage Example 
 - **Initialise the SharedPreferences**
@@ -92,3 +99,6 @@
             ```
                   
    ** **Refer MainActivity in Sample project for more samples**
+
+## License
+Licensed under Apache Licence, Version 2.0. [Check the full licence here](https://github.com/Naveentp/PreferenceHelper/blob/master/LICENSE.txt)
