@@ -1,13 +1,6 @@
 # Preference Helper
 > A SharedPreference helper library to save and fetch the values easily.
 
-## Use in your project
-Grab this library at Maven coordinates.  
-
-```
-implementation "com.naveentp:preferencehelper:1.0.0-rc1"
-```
-
 ## Usage Example 
 - **Initialise the SharedPreferences**
 
@@ -20,13 +13,13 @@ implementation "com.naveentp:preferencehelper:1.0.0-rc1"
         
         ```kotlin
         private val sharedPref: SharedPreferences by lazy {
-                PreferenceHelper.customPref(this, "Sample")
-            }
+            PreferenceHelper.customPref(this, "Sample")
+        }
         ```
         
     - Custom SharedPreferences
         ```kotlin
-            PreferenceHelper.customPref(this, "YOUR_SHARED_PREFERENCES_NAME")
+        PreferenceHelper.customPref(this, "YOUR_SHARED_PREFERENCES_NAME")
         ```
     
 - **Save / Fetch values from SharedPreferences**
