@@ -104,7 +104,7 @@ dependencies {
             }
             ```
                   
-   ** **Refer MainActivity in Sample project for more samples**
+   ** **Refer [MainActivity](https://github.com/Naveentp/PreferenceHelper/blob/master/sample/src/main/java/com/naveentp/preferencehelper/MainActivity.kt) in Sample project for more samples**
 
 ## License
 Licensed under Apache Licence, Version 2.0. [Check the full licence here](https://github.com/Naveentp/PreferenceHelper/blob/master/LICENSE.txt)
