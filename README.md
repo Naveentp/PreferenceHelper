@@ -2,10 +2,16 @@
 > A SharedPreferences helper library to save and fetch the values easily.
 
 ## Use in your project
-Grab this library at Maven coordinates.  
+Add this to your module's `build.gradle`
 
-```
-implementation 'com.naveentp:preferencehelper:0.0.1'
+```gradle
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.naveentp:preferencehelper:0.0.1'
+}
 ```
 
 ## Usage Example 
