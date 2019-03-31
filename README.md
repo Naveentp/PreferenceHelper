@@ -1,6 +1,9 @@
 # Preference Helper
 > A SharedPreferences helper library to save and fetch the values easily.
 
+## Featured in
+[![AndroidDev Digest](https://img.shields.io/badge/AndroidDev%20Digest-221-blue.svg)](https://www.androiddevdigest.com/digest-221/)
+
 ## Use in your project
 Add this to your module's `build.gradle`
 
