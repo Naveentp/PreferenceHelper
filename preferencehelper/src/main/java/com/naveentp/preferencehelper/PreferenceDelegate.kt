@@ -15,9 +15,9 @@ class PreferenceDelegate<T> {
     private var pref: SharedPreferences
     private var key: String
     private var defaultValue: T
-    private var listener: PreferenceObserver? = null
+    private var listener: PreferenceObserver<T>? = null
 
-    constructor(pref: SharedPreferences, key: String, defaultValue: T, listener: PreferenceObserver? = null) {
+    constructor(pref: SharedPreferences, key: String, defaultValue: T, listener: PreferenceObserver<T>? = null) {
         this.pref = pref
         this.key = key
         this.defaultValue = defaultValue
@@ -25,7 +25,7 @@ class PreferenceDelegate<T> {
     }
 
     constructor(context: Context,
-                name: String? = null, key: String, defaultValue: T, listener: PreferenceObserver? = null) {
+                name: String? = null, key: String, defaultValue: T, listener: PreferenceObserver<T>? = null) {
         this.pref =
             if (name == null) PreferenceHelper.defaultPref(context) else PreferenceHelper.customPref(context, name)
         this.key = key
@@ -39,7 +39,7 @@ class PreferenceDelegate<T> {
 
     operator fun setValue(thisRef: Any?, property: KProperty<*>, value: T) {
         pref[key] = value
-        listener?.onChangePreferenceValue(key, value)
+        listener?.invoke(key, value)
     }
 }
 

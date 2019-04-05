@@ -5,7 +5,4 @@ package com.naveentp.preferencehelper
  * @since 27/03/19
  */
 
-interface PreferenceObserver {
-
-    fun <T> onChangePreferenceValue(key: String, value: T)
-}
+typealias PreferenceObserver<T> = (key: String, value: T) -> Unit
